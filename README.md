@@ -1,6 +1,11 @@
 # WebMine
 This is the repository were you can contribute all your Web Projects. Duplicate projects will not be merged. You can use this repository as your first hacktober pull request.
 
+This Repository is specially for Hacktoberfest participants.
+ 
+**Note: Use PascalCase to name your repository**
+
+
 ## HOW TO CONTRIBUTE ? 👷 
 
 **1.** Fork [this](https://github.com/server-geeks/WebMine) repository.
