@@ -70,7 +70,7 @@ git push -u origin <your_branch_name>
 
 <br>
 
-<br><h1 align="center">Project Maintainers ⚙</h1>
+<br><h1 align="center"> Maintainers ⚙</h1>
 <table align="center">
   <tbody><tr>
     
