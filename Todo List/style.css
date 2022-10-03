@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    background-color: #212529;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: white;
+    width: 45vw;
+    height: 15vh;
+    margin-left: 27.5%;
+    text-align: center;
+}
