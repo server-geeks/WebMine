@@ -9,8 +9,7 @@ name: Labeler
 on: [pull_request]
 
 jobs:
-  label:"hacktoberfest22", "hacktoberfest2022"
-
+  hacktoberfest2022:
     runs-on: ubuntu-latest
     permissions:
       contents: read
