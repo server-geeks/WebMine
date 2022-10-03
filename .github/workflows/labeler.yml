@@ -1,18 +1,35 @@
-name: issue-automation
+# name: issue-automation
 
-on:
-  issues:
-    types: [opened]
-  pull_request:
-    types: [opened,reopend]
+# on:
+#   issues:
+#     types: [opened]
+#   pull_request:
+#     types: [opened,reopend]
 
-jobs:
-  automate-issues-labels:
-    runs-on: ubuntu-latest
-    steps:
-      - name: initial labeling
-        uses: andymckay/labeler@master
-        with:
-          add-labels: "hacktoberfest22, hacktoberfest2022"
-          ignore-if-labeled: true
+# jobs:
+#   automate-issues-labels:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: initial labeling
+#         uses: andymckay/labeler@master
+#         with:
+#           add-labels: "hacktoberfest22, hacktoberfest2022"
+#           ignore-if-labeled: true
         
+name: Label Pr
+on:
+  pull_request:
+    types:
+      - reopened
+      - opened
+jobs:
+  label_pull_request:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Label PR
+        uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
+        with:
+          add-labels: "hacktoberfest2022, hacktoberfest22 "
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
