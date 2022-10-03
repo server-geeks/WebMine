@@ -26,7 +26,7 @@ jobs:
   label_pull_request:
     runs-on: ubuntu-latest
     permissions:
-      issues: write
+      pull-requests: write
     steps:
       - name: Label PR
         uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
