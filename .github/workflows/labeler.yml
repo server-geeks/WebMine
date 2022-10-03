@@ -1,16 +1,17 @@
-name: "Pull Request Labeler"
+name: Add Labels
+
 on:
- pull_request:
-  types: [synchronize, opened, reopened, edited, closed]
+  pull_request:
+    types: opened
 
 jobs:
-  label:
-    permissions:
-      contents: read
-      pull-requests: write
+  add_labels:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions-ecosystem/action-add-labels@v1
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        labels: "hacktoberfest2022"
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ startsWith(github.event.comment.body, '/add-labels') }}
+        with:
+          labels: |
+            documentation
+            changelog
