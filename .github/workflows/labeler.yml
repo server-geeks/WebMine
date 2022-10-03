@@ -1,18 +1,19 @@
-name: issue-automation
-
+     
+name: Label Pr
 on:
-  issues:
-    types: [opened]
   pull_request:
-    types: [opened,reopend]
-
+    types:
+      - reopened
+      - opened
 jobs:
-  automate-issues-labels:
+  label_pull_request:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
-      - name: initial labeling
+      - name: Label PR
         uses: andymckay/labeler@master
         with:
-          add-labels: "hacktoberfest22, hacktoberfest2022"
+          add-labels: "hacktoberfest2022, hacktoberfest22 "
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           ignore-if-labeled: true
-        
