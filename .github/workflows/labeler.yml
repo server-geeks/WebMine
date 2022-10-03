@@ -1,16 +1,31 @@
-name: "Pull Request Labeler"
+# name: "Pull Request Labeler"
+# on:
+#  pull_request:
+#   types: [synchronize, opened, reopened, edited, closed]
+
+# jobs:
+#   label:
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions-ecosystem/action-add-labels@v1
+#       with:
+#         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+#         labels: "hacktoberfest2022"
+name: Add Label
+
 on:
- pull_request:
-  types: [synchronize, opened, reopened, edited, closed]
+  issues:
+    types: opened
 
 jobs:
-  label:
-    permissions:
-      contents: read
-      pull-requests: write
+  add_label:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        labels: "hacktoberfest2022"
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ startsWith(github.event.comment.body, '/add-labels') }}
+        with:
+          labels: hacktoberfest2022
