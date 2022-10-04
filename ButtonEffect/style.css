@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;   /* This line and below line works together */
+    align-items: center;
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+.btn{
+    background-color: pink;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); /* Horizontal Vertical Blur */
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 0px;
+    height: 0px;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s;
+}
+
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover::before{
+    width: 300px;
+    height: 300px;
+}
