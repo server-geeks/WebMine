@@ -1,0 +1,54 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}.nav-first{
+    margin-left: 400px;
+}
+.nav-list{
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.search-btn{
+    margin-right: 20px;
+}
+.profile{
+    padding-top: 5.5px;
+}
+.navbar-brand{
+    margin-left: 5px;
+    font-size: 30px;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+}
+nav{
+ 
+  
+    width: 1535px;
+    color: white;
+}
+
+.container-1{
+    background-image:url('/img/sung-jin-woo-solo-leveling-8y.jpg');
+ width: 1530px;
+    
+}
+.text{
+   color: black;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    width: 800px;
+
+    margin-left: 350px;
+}
+
+.card{
+    width: 470px;
+}
+.head{
+    margin-top: 50px;
+}
