@@ -1,0 +1,8 @@
+repository:
+ # Labels: define labels for Issues and Pull Requests
+ labels:
+  - name: hacktoberfest22
+    color: '#ededed'
+  - name: hacktoberfest2022 
+    color: '#336699'
+    

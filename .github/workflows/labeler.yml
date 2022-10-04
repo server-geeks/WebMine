@@ -1,0 +1,19 @@
+     
+name: Label Pr
+on:
+  pull_request:
+    types:
+      - reopened
+      - opened
+jobs:
+  label_pull_request:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Label PR
+        uses: andymckay/labeler@master
+        with:
+          add-labels: "hacktoberfest2022, hacktoberfest22 "
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          ignore-if-labeled: true

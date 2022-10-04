@@ -1,6 +1,10 @@
 # WebMine
 ## Add your Web Development Projects Here
-This is the repository were you can contribute all your Web Projects. Duplicate projects will not be merged. You can use this repository as your first hacktober pull request.
+- This is the repository were you can contribute all your Web Projects.
+- Duplicate projects will not be merged. 
+- Please add screenshots of your project.
+- If your project is hosted please add that link.
+- You can use this repository as your first hacktober pull request.
 
 This Repository is specially for Hacktoberfest participants.
  
