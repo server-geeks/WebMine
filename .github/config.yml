@@ -11,10 +11,13 @@ newIssueWelcomeComment: >
 
 # Comment to be posted to on PRs from first time contributors in your repository
 newPRWelcomeComment: >
-  # Thanks for opening this pull request! Please check out our contributing guidelines.
-  * Please attach some screenshots of your project in a folder named screenshots.
-  * Request project maintainers for review
-  * Do not add duplicate projects
+  Thanks for opening this pull request! Please check out our contributing guidelines.
+  
+  Please attach some screenshots of your project in a folder named screenshots.
+  
+  Request project maintainers for review.
+  
+  Do not add duplicate projects.
 
 # Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
 
