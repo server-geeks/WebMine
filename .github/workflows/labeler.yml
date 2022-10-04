@@ -15,5 +15,5 @@ jobs:
         uses: andymckay/labeler@master
         with:
           add-labels: "hacktoberfest2022, hacktoberfest22 "
-#           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           ignore-if-labeled: true
