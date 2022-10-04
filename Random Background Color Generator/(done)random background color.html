@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightblue;
+            overflow: hidden;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #press{
+            font-size: 25px;
+            padding: 20px;
+            /* background-color: lightseagreen; */
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="press">click here!!!</button>
+    <span id="colour"></span>
+    <script>
+        let ola = document.getElementById('press');
+        ola.addEventListener('click',function(){
+            let x = Math.floor(Math.random()*(256));
+            let y = Math.floor(Math.random()*(256));
+            let z = Math.floor(Math.random()*(256));
+            document.body.style.backgroundColor = `rgb(${x},${y},${z})`;
+            document.getElementById('press').innerHTML = `rgb(${x},${y},${z})`;
+        })
+    </script>
+</body>
+</html>
