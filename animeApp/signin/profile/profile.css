@@ -1,0 +1,37 @@
+
+.back{
+    z-index: -1;
+    box-shadow: 50px;
+    filter: brightness(80%);
+    
+}
+.forms{
+    height: 300px;
+    width: 500px;
+    display: inline-block;
+
+  position: absolute;
+  top: 50px;
+  left: 50px;
+    margin: 150px 500px;
+    
+}
+.btn{
+    margin-left: 200px;
+}
+.checkbox{
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+    margin-top: 5px;
+}
+.heading{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.form-floating{
+    margin-top: 10px;
+    border-radius: 0;
+}

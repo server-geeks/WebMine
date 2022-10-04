@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Movify</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active nav-list nav-first text-light" aria-current="page" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-list text-light" href="#">TV shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-list text-light" href="#">Anime</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-list text-light" href="./pricing/index.html">Plans</a>
+              </li>
+              <li class="nav-item dropdown profile">
+                <a class="nav-link dropdown-toggle profile text-light " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-user profile"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item profile" href="./signin/profile/profile.html">Profile</a></li>
+                  <li><a class="dropdown-item profile" href="#">Logout</a></li>
+                  
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- NAVBAR -->
+
+
+        <!-- MAIN MENU -->
+
+
+        <div class="box">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="aside-bar">
+                <div class="new-trailers">
+                  <h3 class="trailer-head">New Trailers</h3>
+    
+                  <!-- card-1 -->
+                  <div class="card card-box">
+                    <img src="./img/th-3.jpg" class="card-img trailer-img" alt="...">
+                    <div class="card-img-overlay cards">
+                      <h6 class="card-title"><i class="fa-solid fa-eye"></i>1.1M</h6>
+                      <div class="card-text">
+                        <div class="text">
+                          <i class="fa-regular fa-circle-play play" ></i>
+                          <h5>Black Panther 2</h5>
+                          <h6>3 hrs ago</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                       <!-- !card-1 -->
+                      <!-- card-2 -->
+                  <div class="card  card-box">
+                    <img src="./img/th-6.jpg" class="card-img trailer-img" alt="...">
+                    <div class="card-img-overlay cards">
+                      <h6 class="card-title"><i class="fa-solid fa-eye "></i>1.1M</h6>
+                      <div class="card-text">
+                        <div class="text">
+                          <i class="fa-regular fa-circle-play play"></i>
+                          <h5>Black Panther 2</h5>
+                          <h6>3 hrs ago</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                       <!-- card-2 -->
+                       .
+                </div>
+                <div class="genre">
+                  <h3 class="genre-head">Favourite Genre</h3>
+    <div class="btn-box">
+      <button type="button" class="btn-genre">Action</button>
+      <button type="button" class="btn-genre">Western</button>
+      <button type="button" class="btn-genre">Adventure</button>
+      <button type="button" class="btn-genre">Drama</button>
+      <button type="button" class="btn-genre">Sci-Fi</button>
+      <button type="button" class="btn-genre">Romance</button>
+
+    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="latest">
+                <div class="card card-latest ">
+                  <h3 class="head-latest">Latest</h3>
+                  <img src="./img/th-7.jpg" class="card-img latest-img " alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title latest-title">LOVE</h5>
+                <button type="button" class="latest-btn"> <i class="fa-regular fa-circle-play play" ></i> Watch Now</button>
+                  </div>
+                </div>
+              </div>
+             <div class="continue">
+              <h3 class="cont-head">Continue Watching</h3>
+              <div class="cards-wrapper">
+                <div class="card cardbox">
+                  <img src="./img/th-1.png" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <div class="card-text">
+                      <div class="text-con">
+                        <i class="fa-regular fa-circle-play play"></i>
+                        <h5>Black Panther 2</h5>
+                        <h6>3 hrs ago</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card cardbox">
+                  <img src="./img/th-5.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <div class="card-text">
+                      <div class="text-con">
+                        <i class="fa-regular fa-circle-play play"></i>
+                        <h5>Black Panther 2</h5>
+                        <h6>3 hrs ago</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card cardbox">
+                  <img src="./img/th-8.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                    <div class="card-text">
+                      <div class="text-con">
+                        <i class="fa-regular fa-circle-play play"></i>
+                        <h5>Black Panther 2</h5>
+                        <h6>3 hrs ago</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="continue">
+                <h3 class="cont-head">Popular</h3>
+                <div class="cards-wrapper">
+                  <div class="card cardbox">
+                    <img src="./img/images (1).jfif" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+                      <div class="card-text">
+                        <div class="text-con">
+                          <i class="fa-regular fa-circle-play play"></i>
+                          <h5>Black Panther 2</h5>
+                          <h6>3 hrs ago</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card cardbox">
+                    <img src="./img/images (2).jfif" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+                      <div class="card-text">
+                        <div class="text-con">
+                          <i class="fa-regular fa-circle-play play"></i>
+                          <h5>Black Panther 2</h5>
+                          <h6>3 hrs ago</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card cardbox">
+                    <img src="./img/download.jfif" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+                      <div class="card-text">
+                        <div class="text-con">
+                          <i class="fa-regular fa-circle-play play"></i>
+                          <h5>Black Panther 2</h5>
+                          <h6>3 hrs ago</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="continue">
+                  <h3 class="cont-head">Recommendations</h3>
+                  <div class="cards-wrapper">
+                    <div class="card cardbox">
+                      <img src="./img/th-6.jpg" class="card-img-top" alt="...">
+                      <div class="card-img-overlay">
+                        <div class="card-text">
+                          <div class="text-con">
+                            <i class="fa-regular fa-circle-play play"></i>
+                            <h5>Black Panther 2</h5>
+                            <h6>3 hrs ago</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card cardbox">
+                      <img src="./img/download (3).jfif" class="card-img-top" alt="...">
+                      <div class="card-img-overlay">
+                        <div class="card-text">
+                          <div class="text-con">
+                            <i class="fa-regular fa-circle-play play"></i>
+                            <h5>Black Panther 2</h5>
+                            <h6>3 hrs ago</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card cardbox">
+                      <img src="./img/download (2).jfif" class="card-img-top" alt="...">
+                      <div class="card-img-overlay">
+                        <div class="card-text">
+                          <div class="text-con">
+                            <i class="fa-regular fa-circle-play play"></i>
+                            <h5>Black Panther 2</h5>
+                            <h6>3 hrs ago</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="continue">
+                    <h3 class="cont-head">Watch Later</h3>
+                    <div class="cards-wrapper">
+                      <div class="card cardbox">
+                        <img src="./img/download (1).jfif" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                          <div class="card-text">
+                            <div class="text-con">
+                              <i class="fa-regular fa-circle-play play"></i>
+                              <h5>Black Panther 2</h5>
+                              <h6>3 hrs ago</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card cardbox">
+                        <img src="./img/images (2).jfif" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                          <div class="card-text">
+                            <div class="text-con">
+                              <i class="fa-regular fa-circle-play play"></i>
+                              <h5>Black Panther 2</h5>
+                              <h6>3 hrs ago</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card cardbox">
+                        <img src="./img/th-1.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay">
+                          <div class="card-text">
+                            <div class="text-con">
+                              <i class="fa-regular fa-circle-play play"></i>
+                              <h5>Black Panther 2</h5>
+                              <h6>3 hrs ago</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+             </div>
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+         
+        
+       
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
