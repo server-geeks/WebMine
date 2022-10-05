@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+      
+        height: 700px;
+        width: 1500px;
+    }
+    .mountain{
+        position: absolute;
+        top: 400px;
+    }
+    .soldier{
+       
+        height: 50px;
+        width: 50px;
+        position:absolute;
+        top: 380px;
+        left: 120px;
+        animation-name: change;
+        animation-duration: 30s;animation-iteration-count: 1;
+  
+
+    }
+    .plane1{
+        height: 50px;
+        width: 50px;
+        
+        position: absolute;
+        top: 100px;
+        
+        animation-name: planes1;
+        animation-duration: 30s;animation-iteration-count: 1;
+
+    }
+      .plane2{
+        height: 50px;
+        width: 50px;
+        
+        position: absolute;
+        top: 130px;
+        
+        animation-name: planes2;
+        animation-duration: 30s;
+        animation-iteration-count: 1;
+
+    }
+      .plane3{
+        height: 50px;
+        width: 50px;
+    
+        position: absolute;
+        top: 150px;
+     
+        
+        animation-name: planes3;
+        animation-duration: 30s;
+        animation-iteration-count: 1;
+
+    }
+    .submarine{
+        height: 50px;
+        width: 50px;
+     
+        position: absolute;
+        top: 700px;
+         left: 200px;
+        
+        animation-name: submarines;
+        animation-duration: 30s;
+        animation-iteration-count: 1;
+
+    }
+    @keyframes submarines {
+        0%{
+            top: 700px;
+        }
+        33%{
+            top:700px ;
+        }
+        35%{ top: 670px; left: 510px;}
+          37%{ top: 640px; left: 540px;}
+            40%{ top: 600px; left: 570px;}
+              43%{ top: 560px; left: 590px;}
+          45%{
+            top: 500px;
+            left: 610px;
+        }
+          55%{
+            top: 490px;
+            left: 630px;
+        }
+          100%{
+            top: 480px;
+            left: 650px;
+        }
+        
+    } 
+    @keyframes planes1 {
+        0%{ left: 1500px;}
+        33%{ left: 1100px;
+        width: 4%; }
+        33.3%{
+            width: 0;
+        }
+        100%{
+          width: 0;
+        }
+        
+    }
+     @keyframes planes2 {
+        0%{ left: 1500px;}
+        36%{ left: 1300px; }
+         100%{
+            display: none;
+        }
+        
+    }
+     @keyframes planes3 {
+        0%{ left: 1500px;}
+        31%{ left: 1200px; }
+         100%{left: 1200px;
+            display: none;
+        }
+        
+    }
+@keyframes change{
+    0%{
+        background-image: url(/img/soldier1.png);
+        background-color: red;
+    }
+    30%{
+        background-image: url(/img/soldier2.png);
+        background-color: blue;
+    }
+}
+
+    .rock{
+        position: absolute;
+        top: 350px;
+        left: 160px;
+        
+    }
+</style>
+<body>
+    <div class="container">
+  <img src="/img/istockphoto-1028287226-170667a.jpg" alt="" width="1500px" height="700px">
+  <div>
+    <img class="mountain" src="/img/pixlr-bg-result.png" alt="" width="30%">
+  </div>
+  <div class="soldier"></div>
+  <div class="rock">
+    <img src="/img/rock.png" alt="" width="45%">
+  </div>
+  <div class="plane1"><img src="/img/plane1.png" alt="" width="300%"></div>
+<div class="plane2"><img src="/img/plane2.png" alt="" width="300%"></div>
+<div class="plane3"><img src="/img/plane3.png" alt="" width="300%"></div>
+<div class="submarine"><img src="/img/submarine.png" alt="" width="490%"></div>
+  
+    </div>
+    
+</body>
+</html>
