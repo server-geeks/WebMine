@@ -18,7 +18,7 @@ This Repository is specially for Hacktoberfest participants.
 **2.** Clone the forked repository.
 
 ```terminal
-git clone https://github.com/server-geeks/WebMine.git
+git clone https://github.com/<your_username>/WebMine.git
 ```
 
 **3.** Navigate to the project directory.
