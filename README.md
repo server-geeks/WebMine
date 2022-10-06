@@ -72,10 +72,6 @@ git push -u origin <your_branch_name>
 
 **Congratulations!** Sit and relax till we review your PR, you've made your contribution to (https://github.com/server-geeks/WebMine) project
 
-## Contributors
-<a href="https://github.com/server-geeks/WebMine/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=server-geeks/WebMine" />
-</a>
 
 <br>
 
@@ -97,3 +93,9 @@ git push -u origin <your_branch_name>
 </tr>
 
 </tbody></table>
+<br>
+
+## Contributors
+<a href="https://github.com/server-geeks/WebMine/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=server-geeks/WebMine" />
+</a>
