@@ -72,6 +72,7 @@ git push -u origin <your_branch_name>
 
 **Congratulations!** Sit and relax till we review your PR, you've made your contribution to (https://github.com/server-geeks/WebMine) project
 
+
 <br>
 
 <br><h1 align="center"> Maintainers ⚙</h1>
@@ -90,4 +91,11 @@ git push -u origin <your_branch_name>
  Kushagra Jain</b></sub><br>
 <a href="https://www.linkedin.com/in/kushagra-jain-6a9a8a1b1/" target="_blank"><img align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="Linkedin" height="20" width="20" /></a>&nbsp&nbsp<a href="https://github.com/KushagraJain58-cmd/" target="_blank"><img align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github" height="20" width="20" /></a><nbsp></td></a></td>
 </tr>
+
 </tbody></table>
+<br>
+
+## Contributors
+<a href="https://github.com/server-geeks/WebMine/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=server-geeks/WebMine" />
+</a>
