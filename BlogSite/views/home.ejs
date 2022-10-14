@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%> <!--Adding header/footer Layouts-->
+
+ <div class="Text">
+<h1>Home</h1>
+
+<p> <%= startingContent %> </p>  
+
+<div class="postPalet">
+  
+  <%  posts.forEach(function(post){ %>
+    <a href="/posts/<%=post._id%>">Read More</a> <!--Read More link-->
+    <p><%= post.content.substring(0,100) +" ..." %></p> <!--Truncating the content -->
+    <h1> <%= post.title %></h1>
+ 
+<% });  %>
+
+  </div>
+  </div>
+<%- include("partials/footer"); -%> <!--Adding header/footer Layouts-->
