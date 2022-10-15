@@ -1,0 +1,43 @@
+<%- include('navbar',{signedIN:signedIN, 
+   if(usrDetails){ usrDetails:usrDetails }
+})%>
+    <div class="wrapper position-relative">
+      <img
+        src="images/car-bg.jpeg"
+        alt="car-bg"
+        class="opacity-75 w-100 -z-50 p-0"
+      />
+      <div
+        class="position-absolute top-card rounded rounded-5 left justify-items-center md-card"
+      >
+        <div class="d-flex flex-column align-items-start">
+          <h1 class>Experience whole new level of travel</h1>
+        </div>
+        <p class="card-text w-90 py-2">
+          Your one stop place to rent cars from top brands.
+          Choose from a variety of cars ranging from hatchbacks to sedan to luxury vehicles.
+          Book your car with us and enjoy your journey.
+          Pay as you go or pay at the end of the journey.
+        </p>
+        <div class="d-flex log-btn">
+          <ul class="d-flex gap-3">
+            <li>
+              <a
+                class="btn btn-primary shadow-xl border border-2 border-dark rounded rounded-2" href="/login"
+                >Login 
+              </a>
+            </li>
+            <!-- <li>
+              <a
+                class="btn btn-primary shadow-xl border border-2 border-dark rounded rounded-2"
+                href="/login"
+                >Login as Driver
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <%-include('footer')%>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.carousel-inner img {
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-item {
+  width: 50%;
+}
+.wrapper img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+.nav-link {
+  text-transform: capitalize;
+}
+.top-card {
+  top: 5em;
+  right: 4em;
+  background-color: aliceblue;
+  padding-inline: 3em;
+  padding-block: 2em;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 60%;
+}
+.top-card h1 {
+  font-size: 2rem;
+}
+.log-btn ul {
+  list-style: none;
+}
+.md-card {
+  flex-direction: column;
+  align-content: space-between;
+}
+.img-fluid {
+  width: 80%;
+}

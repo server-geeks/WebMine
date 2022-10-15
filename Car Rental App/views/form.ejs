@@ -1,0 +1,62 @@
+<%- include('navbar',{signedIN:signedIN, if(usrDetails){ usrDetails:usrDetails }
+})%>
+<div class="container-fluid">
+  <h1 class="p-4">Checkout</h1>
+  <form class="mx-5 my-2" action="/addtocart" method="POST">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <input
+            type="text"
+            id="form6Example1"
+            class="form-control"
+            name="car_id"
+            value="<%=car_id%> "
+          />
+          <label class="form-label" for="form6Example1">Car Chosen</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex gap-4">
+      <!-- Text input -->
+      <div class="form-outline mb-4">
+        <input
+          type="number"
+          id="form6Example3"
+          class="form-control"
+          name="distance"
+        />
+        <label class="form-label" for="form6Example3">Distance</label>
+      </div>
+
+      <!-- Text input -->
+      <div class="form-outline mb-4">
+        <input
+          type="number"
+          id="form6Example4"
+          class="form-control"
+          name="hours"
+        />
+        <label class="form-label" for="form6Example4">Hours</label>
+      </div>
+    </div>
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form6Example5" class="form-control" name="from" />
+      <label class="form-label" for="form6Example5">From</label>
+    </div>
+
+    <!-- Number input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form6Example6" class="form-control" name="to" />
+      <label class="form-label" for="form6Example6">To </label>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">
+      Add to Bookings
+    </button>
+  </form>
+</div>
+<%-include('footer')%>

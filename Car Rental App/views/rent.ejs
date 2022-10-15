@@ -1,0 +1,54 @@
+<%- include('navbar',{signedIN:signedIN, if(usrDetails){ usrDetails:usrDetails }
+})%>
+<div class="container d-flex justify-content-center">
+  <div class="row">
+    
+    <% cars.map(car => { %>
+    <div class="col-md-4 mt-2">
+  <form action="/book" method="POST">
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-img-actions">
+            <img
+              src="<%=car.image%>"
+              class="card-img img-fluid"
+              width="96"
+              height="350"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="card-body bg-light text-center">
+          <div class="mb-2">
+            <h6 class="font-weight-semibold mb-2">
+              <a href="#" class="text-default mb-2" data-abc="true"
+                ><%= car.name%></a
+              >
+            </h6>
+            <a href="#" class="text-muted" data-abc="true"><%= car.type%></a>
+          </div>
+          <h3 class="mb-0 font-weight-semibold">$<%= car.price%></h3>
+          <div>
+            <%for(var i=0;i<car.rating;i++){%>
+            <i class="fa fa-star star"></i>
+            <%}%>
+          </div>
+          <div class="text-muted mb-3">34 reviews</div>
+          <input type="hidden" name="id" value=<%= car.id%>>
+
+          <button
+            type="submit"
+            class="btn btn-primary border border-2 border-dark bg-cart"
+          >
+            <i class="fa fa-cart-plus mr-2"></i> Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+    <% }) %>
+  </div>
+</div>
+<%-include('footer')%>
