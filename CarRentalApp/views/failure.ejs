@@ -1,0 +1,14 @@
+<%- include('navbar',{signedIN:signedIN, if(usrDetails){ usrDetails:usrDetails }
+})%>
+<div class="jumbotron p-4">
+  <h1 class="display-4">Payment UnSuccessful</h1>
+  <p class="lead">
+    Your payment was unsuccessful. We regret any inconvenience caused.
+  </p>
+  <p class="lead">
+    <a class="btn btn-warning btn-lg" href="/bookings" role="button"
+      >Try again</a
+    >
+  </p>
+</div>
+<%-include('footer')%>

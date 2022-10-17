@@ -1,0 +1,100 @@
+<%- include('navbar',{signedIN:signedIN, if(usrDetails){ usrDetails:usrDetails }
+})%>
+<section class="vh-100" style="background-color: #a9e0fa">
+  <div class="container h-100">
+    <div
+      class="row d-flex justify-content-center align-items-center h-100 overflow-scroll"
+    >
+      <div class="col">
+        <p class="mb-4">
+          <span class="h2">Your Bookings </span>
+        </p>
+        <%orders.map(order=>{%>
+        <form action="/cancel" method="POST">
+          <div class="card mb-4">
+            <div class="card-body p-4">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-md-2">
+                  <img
+                    src="<%=order.carInfo[0].image%>"
+                    class="img-fluid"
+                    alt="Generic placeholder image"
+                  />
+                  <div
+                    class="d-flex mt-2 flex-column justify-content-center text-center"
+                  >
+                    <h4><%=order.carInfo[0].name%></h4>
+                    <h5><%=order.carInfo[0].type%></h5>
+                  </div>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">From</p>
+                    <p class="lead fw-normal mb-0"><%=order.source%></p>
+                  </div>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">To</p>
+                    <p class="lead fw-normal mb-0"><%=order.destination%></p>
+                  </div>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Distance</p>
+                    <p class="lead fw-normal mb-0"><%=order.distance%></p>
+                  </div>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Hours</p>
+                    <p class="lead fw-normal mb-0"><%=order.hours%></p>
+                  </div>
+                </div>
+
+                <div class="col-md-1 d-flex justify-content-center">
+                  <div>
+                    <p class="small text-muted mb-4 pb-2">Total</p>
+                    <p class="lead fw-normal mb-0">$<%=order.price%></p>
+                  </div>
+                </div>
+                <div class="col-md-1 d-flex justify-content-center">
+                  <button type="submit" class="border border-0 bg-transparent">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                  <input type="hidden" name="id" value="<%=order._id %>" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <%})%>
+        <div class="card mb-5">
+          <div class="card-body p-4">
+            <div class="float-end">
+              <p class="mb-0 me-5 d-flex align-items-center">
+                <span class="small text-muted me-2">Order total:</span>
+                <span class="lead fw-normal">$<%=totalPrice%></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <a href="/rent">
+            <button type="button" class="btn btn-light btn-lg me-2">
+              Add more Bookings
+            </button>
+          </a>
+          <form action="/pay" method="POST">
+            <input type="hidden" name="totalPrice" value="<%=totalPrice%>" />
+            <button type="submit" class="btn btn-primary btn-lg">
+              Pay Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%-include('footer') %>

@@ -1,0 +1,14 @@
+<%- include('navbar',{signedIN:signedIN, if(usrDetails){ usrDetails:usrDetails }
+})%>
+<div class="jumbotron p-4">
+  <h1 class="display-4">Payment Successful</h1>
+  <p class="lead">
+    Your payment was successful. Thank you for using our service.
+  </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/" role="button"
+      >Return to HomePage</a
+    >
+  </p>
+</div>
+<%-include('footer')%>
