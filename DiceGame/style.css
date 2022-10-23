@@ -1,0 +1,20 @@
+body{
+  background-color: SlateGrey;
+}
+h1{
+  font-family: Lobster;
+  color: PeachPuff;
+  font-size:  100px;
+  font-style: italic;
+  text-align: center;
+}
+
+.cent {
+  margin-left: auto;
+  margin-right: auto;
+  color: LightSalmon;
+  font-family: "Indie Flower";
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
